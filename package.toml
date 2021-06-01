@@ -1,0 +1,12 @@
+
+[buildpack]
+  uri = "."
+
+[[dependencies]]
+  uri = "urn:cnb:registry:sam/runtime-env-descriptor@0.0.1"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:sam/label-descriptor@0.0.1"
+
+[[dependencies]]
+  uri = "urn:cnb:registry:sam/proc-descriptor@0.0.1"

@@ -1,0 +1,29 @@
+api = "0.6"
+
+[buildpack]
+id = "sam/project-descriptor"
+version = "0.0.1"
+name = "Project Descriptor"
+desription = "Configure your docker image using project descriptor"
+homepage = "https://github.com/samj1912/project-descriptor-buildpack"
+keywords = ["project", "descriptor"]
+
+[[buildpack.licenses]]
+type = "MIT"
+
+[[order]]
+
+  [[order.group]]
+    id = "sam/runtime-env-descriptor"
+    optional = true
+    version = "0.0.1"
+
+  [[order.group]]
+    id = "sam/label-descriptor"
+    optional = true
+    version = "0.0.1"
+
+  [[order.group]]
+    id = "sam/proc-descriptor"
+    optional = true
+    version = "0.0.1"
